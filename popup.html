@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>AutoRefresh</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/btn.css">
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+        width: 250px;
+        height: 200px
+      }
+      #status {
+        max-width: 400px;
+        text-align: center;
+        margin: 10px;
+      }
+      .cen {
+        display: block;
+        text-align: center;
+        margin: 20px auto;
+      }
+      input {
+        display: block;
+        margin: 0 auto;
+      }
+      p {
+        text-align: center;
+      }
+    </style>
+    <script src="js/popup.js"></script>
+  </head>
+  <body>
+    <div id="status">
+      <p>AutoRefresh</p>
+    </div>
+    <div id="toggles">
+        <input type="checkbox" name="checkbox1" id="checkbox1" class="ios-toggle" checked/>
+        <label for="checkbox1" class="checkbox-label" data-off="off" data-on="on"></label>
+    </div>
+      <input type="text" name="tHolder" id="timeHolder" class="cen" placeholder="refresh after seconds">
+      <p id="timeStatus">Currently set to 5s</p>
+      <button id="setTime" class="w3-btn w3-green cen">set</button>
+  </body>
+</html>
